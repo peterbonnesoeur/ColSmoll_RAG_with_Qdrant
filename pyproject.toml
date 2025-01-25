@@ -1,0 +1,32 @@
+[project]
+name = "rag-with-qdrant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=0.25.0",
+    "bitsandbytes>=0.41.0",
+    "colpali-engine",
+    "datasets>=2.15.0",
+    "pillow>=10.0.0",
+    "qdrant-client>=1.7.0",
+    "torch>=2.2.0",
+    "transformers>=4.46.2",
+]
+
+[tool.uv.sources]
+colpali-engine = { git = "https://github.com/illuin-tech/colpali" }
+torch = [
+    { index = "pytorch-cu121" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
