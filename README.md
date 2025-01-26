@@ -3,6 +3,9 @@
 This project implements a Multimodal Retrieval-Augmented Generation (RAG) system using [Qdrant](https://qdrant.tech/) for vector storage and [SmolVLM](hhttps://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) for visual question answering. The system uses the latest [Colsmol](https://huggingface.co/vidore/colSmol-256M) model for generating image and text embeddings for retrieval.
 
 
+Also, great article on Colpali and Qdrant here for those that want to do a deep dive:
+[Colpali x Qdrant](https://danielvanstrien.xyz/posts/post-with-code/colpali-qdrant/2024-10-02_using_colpali_with_qdrant.html )
+
 ## Features
 
 - Efficient image indexing and retrieval using Qdrant
