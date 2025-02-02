@@ -2,6 +2,9 @@
 
 A powerful Retrieval Augmented Generation (RAG) system designed to analyze and answer questions about data visualizations. The system combines computer vision and natural language processing to understand charts, graphs, and other data visualizations.
 
+Also, great article on Colpali and Qdrant here for those that want to do a deep dive:
+[Colpali x Qdrant](https://danielvanstrien.xyz/posts/post-with-code/colpali-qdrant/2024-10-02_using_colpali_with_qdrant.html )
+
 ## Features
 
 - 🔍 **Smart Retrieval**: Automatically finds relevant visualizations based on your questions
