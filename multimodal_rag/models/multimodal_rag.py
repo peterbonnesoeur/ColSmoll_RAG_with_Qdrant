@@ -26,7 +26,7 @@ class MultimodalRAG:
         self.image_model = ColIdefics3.from_pretrained(
             retrieval_model,
             torch_dtype=torch.bfloat16,
-            device_map="cuda:0",
+            device_map="auto",
             attn_implementation="eager"
         ).eval()
         
@@ -192,9 +192,6 @@ class MultimodalRAG:
         inputs = self.vlm_processor(text=prompt, images=[image], return_tensors="pt")
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
 
-        # Save the corresponding image
-        image.save(f"image_{query}.png")
-        
         # Generate response
         with torch.no_grad():
             generated_ids = self.vlm.generate(**inputs, max_new_tokens=max_new_tokens)

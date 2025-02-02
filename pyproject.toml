@@ -7,8 +7,9 @@ requires-python = ">=3.11"
 dependencies = [
     "accelerate>=0.25.0",
     "bitsandbytes>=0.41.0",
-    "colpali-engine",
+    "colpali-engine>=0.3.8",
     "datasets>=2.15.0",
+    "gradio>=5.14.0",
     "pillow>=10.0.0",
     "qdrant-client>=1.7.0",
     "torch>=2.2.0",

@@ -11,4 +11,6 @@ wheels/
 
 multimodal_rag/data/
 
+.python-version
 .vscode/
+.gradio/
